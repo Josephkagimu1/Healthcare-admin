@@ -5,6 +5,7 @@ import 'leaflet-defaulticon-compatibility';
 
 const Map = ({ point }) => {
   return (
+    <div className="wrapper">
     <MapContainer
       center={[point.x, point.y]}
       zoom={14}
@@ -17,6 +18,7 @@ const Map = ({ point }) => {
       />
       <Marker position={[point.x, point.y]} draggable={true} animate={true}></Marker>
     </MapContainer>
+  </div>
   );
 };
 
